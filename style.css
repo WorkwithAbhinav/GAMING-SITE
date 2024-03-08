@@ -13,6 +13,13 @@
 }
 @import url(//fonts.googleapis.com/css?family=Vibur);
 
+
+.logo b {
+  font: 400 6vh "Vibur";
+  color: #fee;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444,
+  0 0 0.1em #ff4444, 0 10px 3px #000;
+}
 .logo {
   text-align: center;
   width: 25%;
@@ -20,18 +27,6 @@
   margin: auto;
 }
 
-.logo b {
-  font: 400 6vh "Vibur";
-  color: #fee;
-  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444,
-    0 0 0.1em #ff4444, 0 10px 3px #000;
-}
-.logo b span {
-  animation: blink linear infinite 2s;
-}
-.logo b span:nth-of-type(2) {
-  animation: blink linear infinite 3s;
-}
 @keyframes blink {
   78% {
     color: inherit;
@@ -64,7 +59,12 @@
     text-shadow: inherit;
   }
 }
-
+.logo b span {
+  animation: blink linear infinite 2s;
+}
+.logo b span:nth-of-type(2) {
+  animation: blink linear infinite 3s;
+}
 :root {
   --poppins-font-family: "Poppins", sans-serif;
   --body-col: #171b44;
@@ -79,14 +79,15 @@
   background: var(--main-color);
   color: var(--text-color);
 }
+
+a {
+  text-decoration: none;
+}
 section {
   padding: 0rem 0 3rem;
 }
 img {
   width: 100%;
-}
-a {
-  text-decoration: none;
 }
 li {
   list-style: none;
