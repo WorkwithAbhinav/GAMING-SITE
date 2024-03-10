@@ -89,13 +89,14 @@ section {
 img {
   width: 100%;
 }
-li {
-  list-style: none;
-}
+
 body {
   overflow-x: hidden;
   color: var(--text-color);
   background: var(--body-col);
+}
+li {
+  list-style: none;
 }
 .logo {
   color: #fbfeff;
@@ -105,6 +106,10 @@ body {
 .logo span {
   color: var(--main-color);
 }
+
+.navbar {
+  column-gap: 1.2rem;
+}
 header {
   position: fixed;
   top: 0;
@@ -112,9 +117,6 @@ header {
   width: 100%;
   background: rgb(29 35 82 / 90%);
   z-index: 200;
-}
-.navbar {
-  column-gap: 1.2rem;
 }
 .nav {
   max-width: 1200px;
